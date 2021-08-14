@@ -10,9 +10,7 @@ body {
   background: #f5f6f9;
 }
 
-*,
-::after,
-::before {
+*:not(i) {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -29,6 +27,14 @@ a {
   margin: 0 auto;
 }
 
+.container-pp2 {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.mt-148 {
+  margin-top: 148px;
+}
 .mt-148 {
   margin-top: 148px;
 }

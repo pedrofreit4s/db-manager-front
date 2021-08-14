@@ -7,11 +7,18 @@ type Props = {
   image: any
   title: string
   subtitle: string
+  onClick?: () => void
 }
 
-export default function CardOptions({ active, image, title, subtitle }: Props) {
+export default function CardOptions({
+  active,
+  image,
+  title,
+  subtitle,
+  onClick,
+}: Props) {
   return (
-    <div className={active ? styles.CardActive : styles.Card}>
+    <div onClick={onClick} className={active ? styles.CardActive : styles.Card}>
       <div className={styles.CardContent}>
         <div className={styles.CardIcon}>
           <Image src={image} alt="User icon" />
